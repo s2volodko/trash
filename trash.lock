@@ -1,11 +1,11 @@
-package: github.com/rancher/trash
+package: github.com/s2volodko/trash
 import:
 - package: github.com/Masterminds/glide
   version: fb6c62596ce1b29128f1ef7e329c367a648ee9b1
   repo: https://github.com/StrongMonkey/glide.git
 - package: github.com/Masterminds/vcs
   version: v1.12.0
-- package: github.com/Sirupsen/logrus
+- package: github.com/sirupsen/logrus
   version: v0.10.0
 - package: github.com/cloudfoundry-incubator/candiedyaml
   version: 99c3df8

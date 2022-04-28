@@ -6,7 +6,7 @@ import (
 	"go/token"
 	"testing"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/require"
 )
 
@@ -46,10 +46,10 @@ func TestParseDir(t *testing.T) {
 
 func TestListPackages(t *testing.T) {
 	assert := require.New(t)
-	p := listPackages("github.com/rancher/trash", "vendor")
+	p := listPackages("github.com/s2volodko/trash", "vendor")
 	logrus.Debug(p)
 	assert.Equal(3, len(p))
-	assert.Contains(p, "github.com/rancher/trash")
-	assert.Contains(p, "github.com/rancher/trash/util")
-	assert.Contains(p, "github.com/rancher/trash/conf")
+	assert.Contains(p, "github.com/s2volodko/trash")
+	assert.Contains(p, "github.com/s2volodko/trash/util")
+	assert.Contains(p, "github.com/s2volodko/trash/conf")
 }

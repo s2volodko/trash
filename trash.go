@@ -15,12 +15,12 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
 
 	"github.com/Masterminds/glide/godep"
-	"github.com/rancher/trash/conf"
-	"github.com/rancher/trash/util"
+	"github.com/s2volodko/trash/conf"
+	"github.com/s2volodko/trash/util"
 	"gopkg.in/yaml.v2"
 )
 
